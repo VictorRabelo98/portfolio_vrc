@@ -1,0 +1,482 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+	<title>Victor Rabelo de Campos - Portfólio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+
+
+
+
+	<style>
+		/* CSS adicional para garantir responsividade */
+		
+		/* Reset e configurações globais */
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			overflow-x: hidden;
+		}
+		
+		/* Imagens responsivas */
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		
+		/* Container responsivo */
+		#wrapper {
+			width: 100%;
+			max-width: 100%;
+		}
+		
+		#main {
+			padding: 20px;
+		}
+		
+		/* Intro responsivo */
+		#intro {
+			padding: 3rem 2rem;
+		}
+		
+		#intro h1 {
+			font-size: clamp(1.8rem, 5vw, 3rem);
+			line-height: 1.2;
+		}
+		
+		#intro h2 img {
+			max-width: 200px;
+			height: auto;
+			margin: 0 auto;
+		}
+		
+		/* Posts grid responsivo */
+		.posts {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 2rem;
+			width: 100%;
+		}
+		
+		.posts article {
+			width: 100%;
+		}
+		
+		/* Cards e artigos */
+		article.post.featured {
+			margin-bottom: 3rem;
+			padding: 0 1rem;
+		}
+		
+		article.post.featured h2 {
+			font-size: clamp(1.5rem, 4vw, 2.5rem);
+		}
+		
+		article.post.featured p {
+			font-size: clamp(0.9rem, 2vw, 1.1rem);
+			line-height: 1.6;
+		}
+		
+		/* Imagem principal */
+		.image.main {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		
+		.image.main img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		
+		/* Botões */
+		.button {
+			padding: 0.75rem 1.5rem;
+			font-size: 0.9rem;
+			white-space: nowrap;
+		}
+		
+		.actions.special {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		
+		/* Footer responsivo */
+		#footer {
+			padding: 2rem 1rem;
+		}
+		
+		#footer .split.contact {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		
+		/* Media Queries */
+		
+		/* Tablets */
+		@media screen and (max-width: 980px) {
+			#intro {
+				padding: 2rem 1.5rem;
+			}
+			
+			#main {
+				padding: 15px;
+			}
+			
+			.posts {
+				grid-template-columns: 1fr;
+				gap: 1.5rem;
+			}
+			
+			article.post.featured {
+				padding: 0 0.5rem;
+			}
+		}
+		
+		/* Smartphones */
+		@media screen and (max-width: 736px) {
+			#intro h2 img {
+				max-width: 150px;
+			}
+			
+			#intro h1 {
+				font-size: 1.5rem;
+			}
+			
+			#main {
+				padding: 10px;
+			}
+			
+			article.post.featured {
+				margin-bottom: 2rem;
+			}
+			
+			article.post.featured h2 {
+				font-size: 1.3rem;
+				margin-bottom: 1rem;
+			}
+			
+			article.post.featured p,
+			article.post.featured h3 {
+				font-size: 0.9rem;
+			}
+			
+			.posts {
+				gap: 1rem;
+			}
+			
+			.button {
+				padding: 0.6rem 1.2rem;
+				font-size: 0.85rem;
+			}
+			
+			#footer {
+				padding: 1.5rem 1rem;
+			}
+			
+			#footer h3 {
+				font-size: 1rem;
+			}
+		}
+		
+		/* Smartphones pequenos */
+		@media screen and (max-width: 480px) {
+			#intro {
+				padding: 1.5rem 1rem;
+			}
+			
+			#intro h2 img {
+				max-width: 120px;
+			}
+			
+			#intro h1 {
+				font-size: 1.3rem;
+			}
+			
+			article.post.featured h2 {
+				font-size: 1.2rem;
+			}
+			
+			article.post.featured p {
+				font-size: 0.85rem;
+				line-height: 1.5;
+			}
+			
+			#copyright {
+				font-size: 0.8rem;
+				padding: 1rem;
+			}
+			
+			#copyright ul {
+				flex-direction: column;
+				gap: 0.5rem;
+			}
+		}
+		
+		/* Landscape em dispositivos móveis */
+		@media screen and (max-height: 500px) and (orientation: landscape) {
+			#intro {
+				padding: 1rem;
+			}
+			
+			#intro h2 img {
+				max-width: 100px;
+			}
+		}
+	</style>
+
+		
+
+
+</head>
+
+<body class="is-preload">
+
+	
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+
+		
+		<!-- Intro -->
+		<div id="intro">
+			<h2>
+				<img src="images/vrc-marron.png" alt="Victor Rabelo de Campos" width=50%>
+			</h2>
+			
+			<h1>
+				<span style="color: #c57d01;">Projetos<br /></span>
+			</h1>
+			<p>Portfólio Victor Rabelo de Campos</p>
+		</div>
+
+		
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							
+							<li class="active"><a href="proj.html">Projetos</a></li>
+							<li><a href="curriculo.html">Currículo</a></li>
+							<li><a href="Untitled-1.html">Sobre</a></li>
+							
+						</ul>
+						<ul class="icons">
+							
+							<li><a href="https://github.com/VictorRabelo98" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+
+
+		<!-- Main -->
+		<div id="main">
+
+
+
+			<!-- Posts/Projetos -->
+
+			<article class="post featured">
+				<header class="major">
+					<h2><x href="#">Projetos Dados</x></h2>
+		
+		
+
+			<section class="posts">
+
+				<article>
+					<header>
+						<h3><a href="lab1.html">Dashboard Analítico de Vendas Globais</a></h3>
+					</header>
+					<a href="lab1.html" class="image fit">
+						<img src="images\lab1\Lab1.jpg" alt="Dashboard de Vendas" />
+					</a>
+				
+				</article>
+
+				<article>
+					<header>
+						<h3><a href="lab2.html">Dashboard Analítico de Marketing </a></h3>
+					</header>
+					<a href="lab2.html" class="image fit">
+						<img src="images\2\Untitled-1.jpg" alt="Dashboard de Marketing" />
+					</a>
+			
+				</article>
+
+			</section>
+
+			
+			<section class="posts">
+			
+				<article>
+					<header>
+						<h3><a href="d3.html">Dashboard Analítico KPI
+						</a></h3>
+					</header>
+					<a href="d3.html" class="image fit">
+						<img src="images\3\Desktop 15-10-2025 14-05-22-865.png" alt="Dashboard de Vendas" />
+					</a>
+				
+				</article>
+
+				<article>
+					<header>
+						<h3><a href="d4.html">Dashboard Analítico de Marketing </a></h3>
+					</header>
+					<a href="d4.html" class="image fit">
+						<img src="images\4\01.png" alt="Dashboard de Marketing" />
+					</a>
+			
+				</article>
+
+			</section>
+
+
+			<section class="posts">	
+				<article>
+					<header>
+						<h3><a href="py1.html">Dashboard Analítico em Python </a></h3>
+					</header>
+					<a href="py1.html" class="image fit">
+						<img src="images\ppy1\tumb.jpg" alt="Dashboard em Python" />
+					</a>
+				
+				</article>
+
+				<article>
+
+					<header>
+						
+						<h3><a href="ml1.html">Machine Learning com Python </a></h3>
+					</header>
+					<a href="ml1.html" class="image fit">
+						<img src="images\ml01\thumb.jpg" alt="Dashboard de Marketing" />
+					</a>
+			
+				</article>
+
+
+			</section>
+
+
+
+            <article class="post featured">
+				<header class="major">
+					<h2><x href="#">Projetos Design</x></h2>
+					
+					
+				</header>
+			<section class="posts">
+               
+				<article>
+					<header>
+						<h3><a href="ilu.html">Conjunto de Ilustrações </a></h3>
+					</header>
+					<a href="ilu.html" class="image fit">
+						<img src="images\ILUSTRACOES\thumb.jpg" alt="Ilustrações" />
+					</a>
+				
+				</article>
+
+				<article>
+					<header>
+						<h3><a href="edi.html">Edição de Imagens </a></h3>
+					</header>
+					<a href="edi.html" class="image fit">
+						<img src="images\edicoes\08.jpg" alt="Imagem editada" />
+					</a>
+			
+				</article>
+
+			</section>
+
+			<section class="posts">	
+				<article>
+					<header>
+						<h3><a href="miv.html">Manual de Identidade Visual </a></h3>
+					</header>
+					<a href="miv.html" class="image fit">
+						<img src="images\miv\mi8.jpg" alt="Miv" />
+					</a>
+				
+				</article>
+
+				<article>
+
+					<header>
+						
+						<h3><a href="logo.html">Logos </a></h3>
+					</header>
+					<a href="logo.html" class="image fit">
+						<img src="images\logos\thumb.jpg" alt="LOGO" />
+					</a>
+			
+				</article>
+
+
+			</section>
+
+			<br><br><br>
+
+			
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="split contact">
+				<section class="alt">
+					<ul class="actions">
+					<li><h3>LinkedIn </h3>
+					<p>
+						<a href="https://www.linkedin.com/in/victor-rabelo-aa92b224a/" target="_blank">Victor Rabelo</a>
+					</p>
+					</li>
+					<li>
+					<h3>  Email </h3>
+
+					<p><a href="mailto:victorrabelo14@gmail.com" target="_blank">victorrabelo14@gmail.com</a></p>
+					</li>
+
+					<li>
+					<h3>  GITHub </h3>
+
+					<p><a href="https://github.com/VictorRabelo98" target="_blank">https://github.com/VictorRabelo98</a></p>
+					</li>
+					</ul>
+				</section>
+				
+				
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li> Victor Rabelo de Campos</li>
+				
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
