@@ -354,6 +354,8 @@ input, select, textarea {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vídeo Responsivo</title>
     <style>
+
+	
         * {
             margin: 0;
             padding: 0;
@@ -4015,6 +4017,58 @@ input, select, textarea {
         
 
 /* Footer */
+
+/* CORREÇÃO DO FOOTER - Centralizar textos */
+#footer {
+	padding: 2rem 1rem !important;
+	text-align: center !important;
+}
+
+#footer .split.contact {
+	display: flex !important;
+	justify-content: center !important;
+	align-items: center !important;
+	width: 100% !important;
+}
+
+#footer .split.contact .alt {
+	width: 100% !important;
+	max-width: 800px !important;
+	margin: 0 auto !important;
+}
+
+#footer ul.actions {
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: center !important;
+	align-items: flex-start !important;
+	gap: 2rem !important;
+	flex-wrap: wrap !important;
+	list-style: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#footer ul.actions li {
+	flex: 0 1 auto !important;
+	text-align: center !important;
+	min-width: 200px !important;
+}
+
+#footer h3 {
+	text-align: center !important;
+	margin-bottom: 0.5rem !important;
+	font-size: 1.1rem !important;
+}
+
+#footer p {
+	text-align: center !important;
+	margin: 0 !important;
+}
+
+#footer p a {
+	word-break: break-word !important;
+}
 
 	#footer {
 		color: #717981;
