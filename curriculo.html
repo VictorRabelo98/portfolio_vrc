@@ -5,6 +5,286 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+
+<style>
+/* Reset e configurações globais */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display:block;
+}
+
+#wrapper {
+	width: 100%;
+	max-width: 100%;
+}
+
+#main {
+	padding: 20px;
+}
+
+/* CORREÇÃO DO HEADER - Reduzir tamanho */
+#intro {
+	padding: 3rem 5rem !important;
+	min-height: auto !important;
+}
+
+#intro h1 {
+	font-size: clamp(1.5rem, 4vw, 2.5rem) !important;
+	margin: 1rem 0 !important;
+	line-height: 1.2;
+}
+
+#intro h2 {
+	margin-bottom: 1rem !important;
+}
+
+#intro h2 img {
+	max-width: 150px !important;
+	height: auto;
+	margin: 0 auto;
+}
+
+#intro p {
+	font-size: clamp(0.9rem, 2vw, 1rem) !important;
+	margin: 0.5rem 0 !important;
+}
+
+
+
+
+
+
+/* CSS adicional para garantir responsividade */
+		/* CSS adicional para garantir responsividade */
+		
+		/* Reset e configurações globais */
+		* {
+			box-sizing: border-box;
+		}
+		
+		body {
+			overflow-x: hidden;
+		}
+		
+		/* Imagens responsivas */
+		img {
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+		
+		/* Container responsivo */
+		#wrapper {
+			width: 100%;
+			max-width: 100%;
+		}
+		
+		#main {
+			padding: 20px;
+		}
+		
+		/* Intro responsivo */
+		#intro {
+			padding: 3rem 2rem;
+		}
+		
+		#intro h1 {
+			font-size: clamp(1.8rem, 5vw, 3rem);
+			line-height: 1.2;
+		}
+		
+		#intro h2 img {
+			max-width: 200px;
+			height: auto;
+			margin: 0 auto;
+		}
+		
+		/* Posts grid responsivo */
+		.posts {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 2rem;
+			width: 100%;
+		}
+		
+		.posts article {
+			width: 100%;
+		}
+		
+		/* Cards e artigos */
+		article.post.featured {
+			margin-bottom: 3rem;
+			padding: 0 1rem;
+		}
+		
+		article.post.featured h2 {
+			font-size: clamp(1.5rem, 4vw, 2.5rem);
+		}
+		
+		article.post.featured p {
+			font-size: clamp(0.9rem, 2vw, 1.1rem);
+			line-height: 1.6;
+		}
+		
+		/* Imagem principal */
+		.image.main {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+		
+		.image.main img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
+		
+		/* Botões */
+		.button {
+			padding: 0.75rem 1.5rem;
+			font-size: 0.9rem;
+			white-space: nowrap;
+		}
+		
+		.actions.special {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		
+		/* Footer responsivo */
+		#footer {
+			padding: 2rem 1rem;
+		}
+		
+		#footer .split.contact {
+			display: grid;
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+		
+		/* Media Queries */
+		
+		/* Tablets */
+		@media screen and (max-width: 980px) {
+			#intro {
+				padding: 2rem 1.5rem;
+			}
+			
+			#main {
+				padding: 15px;
+			}
+			
+			.posts {
+				grid-template-columns: 1fr;
+				gap: 1.5rem;
+			}
+			
+			article.post.featured {
+				padding: 0 0.5rem;
+			}
+		}
+		
+		/* Smartphones */
+		@media screen and (max-width: 736px) {
+			#intro h2 img {
+				max-width: 150px;
+			}
+			
+			#intro h1 {
+				font-size: 1.5rem;
+			}
+			
+			#main {
+				padding: 10px;
+			}
+			
+			article.post.featured {
+				margin-bottom: 2rem;
+			}
+			
+			article.post.featured h2 {
+				font-size: 1.3rem;
+				margin-bottom: 1rem;
+			}
+			
+			article.post.featured p,
+			article.post.featured h3 {
+				font-size: 0.9rem;
+			}
+			
+			.posts {
+				gap: 1rem;
+			}
+			
+			.button {
+				padding: 0.6rem 1.2rem;
+				font-size: 0.85rem;
+			}
+			
+			#footer {
+				padding: 1.5rem 1rem;
+			}
+			
+			#footer h3 {
+				font-size: 1rem;
+			}
+		}
+		
+		/* Smartphones pequenos */
+		@media screen and (max-width: 480px) {
+			#intro {
+				padding: 1.5rem 1rem;
+			}
+			
+			#intro h2 img {
+				max-width: 120px;
+			}
+			
+			#intro h1 {
+				font-size: 1.3rem;
+			}
+			
+			article.post.featured h2 {
+				font-size: 1.2rem;
+			}
+			
+			article.post.featured p {
+				font-size: 0.85rem;
+				line-height: 1.5;
+			}
+			
+			#copyright {
+				font-size: 0.8rem;
+				padding: 1rem;
+			}
+			
+			#copyright ul {
+				flex-direction: column;
+				gap: 0.5rem;
+			}
+		}
+		
+		/* Landscape em dispositivos móveis */
+		@media screen and (max-height: 500px) and (orientation: landscape) {
+			#intro {
+				padding: 1rem;
+			}
+			
+			#intro h2 img {
+				max-width: 100px;
+			}
+		}
+	</style>
+
 	<head>
 		<title>VRC</title>
 		<meta charset="utf-8" />
@@ -21,9 +301,8 @@
 				<!-- Intro -->
 					<div id="intro">
 
-						<h2><a href="Untitled-1.html">
-				<img src="images/vrc-marron.png" alt="Victor Rabelo de Campos" style="width: 35%;" >
-				</a>
+				<h2>
+				<img src="images/vrc-marron.png" alt="Victor Rabelo de Campos" width=50%>
 			</h2>
 						
 							
@@ -53,15 +332,13 @@
 								
 				<!-- Main -->
 					<div id="main">
+							<h1 class="image" >
+										
+											<img src="images\curriculo\currículo1.jpg" alt="Foto de apresentação" width="80%" >
+										
+										</h1>
+										
 
-
-                            <!-- Imagem Principal -->
-                            <h1 class="image.fit" alingn="center" justify="center">
-                            <a >
-                                <img src="images\curriculo\currículo1.jpg" alt="Foto curriculo" width="60%" >
-                            </a>
-                            </h1>
-							
 						
                     </div>
 
