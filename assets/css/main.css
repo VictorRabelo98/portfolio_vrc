@@ -51,6 +51,22 @@ body {
         }
 
 
+/* CORREÇÃO DE ALINHAMENTO DAS IMAGENS */
+article.post.featured img {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+article.post.featured p {
+    text-align: center;
+}
+
+article.post.featured header.major p img {
+    margin: 0 auto !important;
+}
+
+
 
 
 ol, ul {
